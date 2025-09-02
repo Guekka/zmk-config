@@ -102,11 +102,11 @@
         sym_layer {
             display-name = "Symbols";
             bindings = <
-                &kp F1  &kp F2     &kp F3     &kp F4     &kp F5                               &kp F6  &kp F7    &kp F8     &kp F9     &kp F10
-        &trans  &none   &kp BSLH   &kp PRCNT  &kp DLLR   &kp RA(LS(S))                        &none   &kp PIPE  &ud_caret  &kp SLASH  &kp RA(N5)  &kp F11
-&trans  &trans  &none   &kp LPAR   &kp RPAR   &kp COLON  &asc_arr                             &none   &ud_dqt   &kp UNDER  &kp LBKT   &kp RBKT    &kp F12   &trans
-        &trans  &none   &ud_grave  &kp AT     &kp AMPS   &kp RC(RA(F14))                      &trans  &trans    &none      &kp HASH   &kp QMARK   &kp EXCL
-                                   &trans     &trans     &trans           &trans      &trans  &trans  &trans    &kp LGUI
+                &kp F1  &kp F2    &kp F3     &kp F4     &kp F5                               &kp F6  &kp F7    &kp F8     &kp F9     &kp F10
+        &trans  &none   &kp BSLH  &kp PRCNT  &kp DLLR   &kp RA(LS(S))                        &none   &kp PIPE  &trans     &kp SLASH  &kp RA(N5)  &kp F11
+&trans  &trans  &none   &kp LPAR  &kp RPAR   &kp COLON  &trans                               &none   &trans    &kp UNDER  &kp LBKT   &kp RBKT    &kp F12   &trans
+        &trans  &none   &trans    &kp AT     &kp AMPS   &kp RC(RA(F14))                      &trans  &trans    &none      &kp HASH   &kp QMARK   &kp EXCL
+                                  &trans     &trans     &trans           &trans      &trans  &trans  &trans    &kp LGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -138,6 +138,16 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+        };
+
+        layer_6 {
+            bindings = <
+                &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
